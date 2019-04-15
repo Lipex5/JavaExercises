@@ -18,13 +18,12 @@ public class FindWord {
     static void printWord(){
         String string = getString();
         String word = getWord();
-        if(string.indexOf(word) != -1){
+        if(string.contains(word)){
             int index = string.indexOf(word) + 1;
             System.out.println("The word '" + word + "' starts on the " + index + " spot in the string");
         }
         else{
             System.out.println("The word is not on the string");
         }
-
     }
 }
