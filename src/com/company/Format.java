@@ -82,11 +82,20 @@ class Format {
     }
 
     private static String uppercaseWord(String string){
+        char[] stringChars = string.toCharArray();
+
+        if(!Character.isUpperCase(string.charAt(0))) stringChars[0] = Character.toUpperCase(string.charAt(0));
+        for(int i = 1; i < string.length(); i++){
+            if(Character.isLetter(string.charAt(i)) && Character.isWhitespace(string.charAt(i - 1))){
+                stringChars[i] = Character.toUpperCase(string.charAt(i));
+            }
+        }
+        string = String.valueOf(stringChars);
         return string;
     }
 
     private static String lowercaseAll(String string){
-        return string;
+        return string.toLowerCase();
     }
 
     private static String quit(String string){
