@@ -98,7 +98,7 @@ class Format {
         return string.toLowerCase();
     }
 
-    private static String quit(String string){
+    private static String quit(String string){ // <-- Still have to add a way to exit the program cleanly
         return string;
     }
 }
