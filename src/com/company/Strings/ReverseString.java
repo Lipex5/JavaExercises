@@ -1,8 +1,8 @@
-package com.company;
+package com.company.Strings;
 
 import java.util.Scanner;
 
-class ReverseString {
+public class ReverseString {
     private static String getString() {
         System.out.println("Write a string to reverse:");
 
@@ -10,7 +10,7 @@ class ReverseString {
         return input.nextLine();
     }
 
-    static void printString() {
+    public static void printString() {
         String string = getString();
         String finalString = new StringBuffer(string).reverse().toString();
         System.out.println(finalString);

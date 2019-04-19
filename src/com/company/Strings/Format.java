@@ -1,8 +1,8 @@
-package com.company;
+package com.company.Strings;
 
 import java.util.Scanner;
 
-class Format {
+public class Format {
     private static void Menu(String string){
         Scanner input = new Scanner(System.in);
 
@@ -45,7 +45,7 @@ class Format {
         }
     }
 
-    static void getString(){
+    public static void getString(){
         Scanner input = new Scanner(System.in);
         System.out.println("Write the string: ");
         Menu(input.nextLine());

@@ -1,8 +1,8 @@
-package com.company;
+package com.company.Strings;
 
 import java.util.Scanner;
 
-class GetCharacter {
+public class GetCharacter {
 
     private static String getString() {
         System.out.println("Write a string:");
@@ -19,7 +19,7 @@ class GetCharacter {
         return input.nextInt() - 1;
     }
 
-    static void printString() {      // <-- Only method you need to call to make the program work
+    public static void printString() {      // <-- Only method you need to call to make the program work
         String charAtIndex = Character.toString(getString().charAt(getIndex()));
 
         System.out.println("The char you're looking for is: " + charAtIndex);

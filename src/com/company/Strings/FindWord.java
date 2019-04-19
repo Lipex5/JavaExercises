@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Strings;
 
 import java.util.Scanner;
 
@@ -15,7 +15,7 @@ public class FindWord {
         return input.nextLine();
     }
 
-    static void printWord(){
+    public static void printWord(){
         String string = getString();
         String word = getWord();
         if(string.contains(word)){

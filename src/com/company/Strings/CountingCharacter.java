@@ -1,8 +1,8 @@
-package com.company;
+package com.company.Strings;
 
 import java.util.Scanner;
 
-class CountingCharacter {
+public class CountingCharacter {
     private static String getString(){
         Scanner input = new Scanner(System.in);
         System.out.println("Write the string: ");
@@ -15,7 +15,7 @@ class CountingCharacter {
         return input.next(".").charAt(0);
     }
 
-    static void printChar(){
+    public static void printChar(){
         String string = getString();
         char letter = getChar();
         int count = 0;

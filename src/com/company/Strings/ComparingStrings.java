@@ -1,8 +1,8 @@
-package com.company;
+package com.company.Strings;
 
 import java.util.Scanner;
 
-class ComparingStrings {
+public class ComparingStrings {
     private static String getString1(){
         Scanner input = new Scanner(System.in);
         System.out.println("Input the first string to compare");
@@ -15,7 +15,7 @@ class ComparingStrings {
         return input.nextLine();
     }
 
-    static void compareStrings(){
+    public static void compareStrings(){
         if(getString1().equals(getString2())) {
             System.out.println("The strings are equal");
         }

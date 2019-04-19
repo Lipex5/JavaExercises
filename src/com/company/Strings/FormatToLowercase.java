@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Strings;
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ public class FormatToLowercase {
         return input.nextLine();
     }
 
-    static void printString(){
+    public static void printString(){
         System.out.println("The string is: " + getString().toLowerCase());
     }
 }
